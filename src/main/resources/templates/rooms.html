@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="utf-8">
+<title>Magestic Hotel</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans"
+	rel="stylesheet">
+
+<script type="text/javascript"
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="dist/jquery.scrollUp.js"></script>
+<script type="text/javascript" src="dist/demo.js"></script>
+
+
+
+<!-- Bootstrap Css -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+	crossorigin="anonymous">
+
+
+</head>
+
+<body>
+	<header class="tm-header">
+		<img class="tm-logo" src="images/logo.jpeg"
+			style="height: 15%; width: 10%;" alt="LOGO!!!!">
+		<nav class="tm-nav">
+			<div>
+				<ul>
+					<li class="tm-list"><a href="/">Home</a></li>
+					<li class="tm-list"><a href="explore">Explore</a></li>
+					<li class="tm-list"><a href="rooms">Rooms</a></li>
+					<li class="tm-list"><a href="bb">Booking</a></li>
+					<li class="tm-list"><a href="contact">Contact</a></li>
+					<li><a href="login">Login</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+
+	<section class="tm-main">
+		<p>Rooms</p>
+	</section>
+
+
+	<section class="tm-roomsection">
+		<div class="tm-room1">
+			<div class="tm-trans">
+				<div>
+					<p><span th:text="${luxurysa}"></span> Bed</p>
+					<p>Complimentary liquor</p>
+					<p>Free Wifi</p>
+				</div>
+
+				<div>
+					<p>Only for</p>
+					<p class="bold"> Rs. <span th:text="${luxurys}"></span> </p> <!--  <h1 th:text="${delux}"></h1>  -->
+				</div>
+			</div>
+
+
+			<img class="tm-roomimage" src="images/luxury.png">
+			<p>
+				<a href="bb">
+					<button type="button" class="btn btn-light btn-lg">Luxury
+						Suite</button>
+				</a>
+			</p>
+
+
+
+
+
+
+
+
+		</div>
+		<div class="tm-room1">
+			<div class="tm-trans">
+				<div>
+					<p><span th:text="${deluxsa}"></span> Bed</p>
+					<p>Luxorious interior</p>
+					<p>Free Wifi</p>
+				</div>
+
+				<div>
+					<p>Only for</p>
+					<p class="bold">Rs. <span th:text="${deluxs}"></span> </p>
+				</div>
+			</div>
+
+
+			<img class="tm-roomimage" src="images/delux.png">
+			<p>
+				<a href="bb">
+					<button type="button" class="btn btn-light btn-lg">Delux
+						Suite</button>
+				</a>
+			</p>
+
+		</div>
+		<div class="tm-room1">
+
+			<div class="tm-trans">
+				<div>
+					<p><span th:text="${premiersa}"></span> Bed</p>
+					<p>Scenic View</p>
+					<p>Free Wifi</p>
+				</div>
+
+				<div>
+					<p>Only for</p>
+					<p class="bold">Rs. <span th:text="${premiers}"></span></p>
+				</div>
+			</div>
+
+
+			<img class="tm-roomimage" src="images/premier.png">
+			<p>
+				<a href="bbS">
+					<button type="button" class="btn btn-light btn-lg">Premier
+						Suite</button>
+				</a>
+			</p>
+
+		</div>
+	</section>
+	<br />
+	<section class="tm-roomsection">
+		<div class="tm-room1">
+
+			<div class="tm-trans">
+				<div>
+					<p><span th:text="${luxuryra}"></span>  Bed</p>
+					<p>Free wifi</p>
+					<p>Fresh towels</p>
+				</div>
+
+				<div>
+					<p>Only for</p>
+					<p class="bold">Rs. <span th:text="${luxuryr}"></span></p>
+				</div>
+			</div>
+
+
+			<img class="tm-roomimage" src="images/luxuryroom.png">
+			<p>
+				<a href="bb">
+					<button type="button" class="btn btn-light btn-lg">Luxury
+						Room</button>
+				</a>
+			</p>
+
+		</div>
+		<div class="tm-room1">
+
+			<div class="tm-trans">
+				<div>
+					<p><span th:text="${deluxra}"></span>  Bed</p>
+					<p>Fresh towels</p>
+					<p>Less costly</p>
+				</div>
+
+				<div>
+					<p>Only for</p>
+					<p class="bold">Rs. <span th:text="${deluxr}"></span></p>
+				</div>
+			</div>
+
+
+			<img class="tm-roomimage" src="images/deluxroom.png">
+			<p>
+				<a href="bb">
+					<button type="button" class="btn btn-light btn-lg">Delux
+						Room</button>
+				</a>
+			</p>
+
+		</div>
+		<div class="tm-room1">
+
+			<div class="tm-trans">
+				<div>
+					<p><span th:text="${premierra}"></span> Bed</p>
+					<p>Fresh towels</p>
+					<p>Less costly</p>
+				</div>
+
+				<div>
+					<p>Only for</p>
+					<p class="bold">Rs. <span th:text="${premierr}"></span></p>
+				</div>
+			</div>
+
+
+			<img class="tm-roomimage" src="images/premiumroom.png">
+			<p>
+				<a href="bb">
+					<button type="button" class="btn btn-light btn-lg">Premier
+						Room</button>
+				</a>
+			</p>
+
+		</div>
+	</section>
+	<br />
+
+
+
+	<!--   <section class="tm-makeres">
+		<div class="tm-res">
+			<div class="tm-resbutton">
+				<a href="bb">
+					<p>Make Reservation</p>
+				</a>
+			</div>
+		</div>
+	</section>    -->
+
+
+
+	<footer class="tm-footer">
+		<div class="tm-us">
+			<p class="bold">About Us</p>
+			<p>Originally begun as an open space of land near the beach,
+				Vihang Vihar, or The Land of The Soaring Birds has transformed into
+				a tourist haven that is sure to ensnare your senses and relax your
+				soul! Known for our peace and tranquility, Our resort, to its
+				distinction, has earned the recognition of being the best resort in
+				Saphale & within the vicinity of Mumbai and Palghar.</p>
+		</div>
+
+		<div class="tm-address">
+			<p class="bold">Address</p>
+			<p>
+				Vihang Vihar, Saphale, <br> Maharashtra 401102 <br>
+				contact: 9863524174<br> Email : admin@mail.com
+			</p>
+		</div>
+		<br />
+		<div class="tm-media">
+			<a href="#"> <img src="images/fb.png"></a> <a href="#"> <img
+				src="images/G.png">
+			</a> <a href="#"> <img src="images/twittr.png">
+			</a> <a href="#"> <img src="images/insta.png">
+			</a>
+
+		</div>
+		<!--        <a href="#">  <img class="tm-up" src="images/up.png"> </a>-->
+	</footer>
+
+	<!-- bootstrap js  -->
+
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+		crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>
